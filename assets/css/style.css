@@ -137,7 +137,29 @@ header {
 	opacity: 0.8;
 	border-radius: 5px;
 }
+
+
 /* main  */
+
+/* section navigation tags */
+h2 {
+    margin-top:25px;
+}
+.h2-tag {
+    margin-right: 50vw;
+	padding-left: 8px;
+    background-color:var(--primary-main-bg);
+}
+.h2-tag-right {
+    margin-left: 50vw;
+	text-align: right;
+	padding-right: 8px;
+    background-color:var(--secondary-main-bg);
+}
+
+
+
+
 
 /* Screen Sizes */
 
