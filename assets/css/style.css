@@ -1,0 +1,45 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* styling variable to be used in project */
+:root {
+    /* header styles */
+    --primary-bg: #fafafa;
+    --secondary-bg: #fff6e0;
+    --primary-text: #272829;
+
+
+    /* main styles */
+    --primary-main-bg: #d9d9d9;  
+    --secondary-main-bg: #61677a;
+    --alt-bg: #fff6e0;
+    --primary-text: #272829;
+    --secondary-text: #fafafa;
+    --alt-text: #fff6e0;
+  
+
+    /* footer styles */
+    --primary-footer-bg: #61677a;
+    --secondary-footer-bg: #fff6e0;
+    --primary-text: #272829;
+    --icon-primary: #fff6e0;
+    --icon-secondary: #61677a;  
+
+    /* fonts */
+    --roboto: 'Roboto Flex', sans-serif;
+	--radley: 'Radley', roboto, sans-serif;
+	--palanquin: 'Palanquin Dark', roboto, sans-serif;
+
+    /* for testing */
+    --outter: 1px solid red;
+	--inner: 2px solid yellow;
+}
+
+body{
+    font-family: var(--roboto);
+    background-color: var(--primary-bg: #fafafa);
+}
+
