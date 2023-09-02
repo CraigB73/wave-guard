@@ -46,11 +46,12 @@ body {
 header {
 	display: flex;
 	justify-content: center;
+
 }
 .hero-image {
 	background: url('../images/bgimage-surfers.jpg') no-repeat center
 		center/cover;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-attachment: fixed;
 	min-height: 655px;
@@ -60,24 +61,25 @@ header {
 /* hero text */
 
 .hero-text {
-	align-self: center;
-	margin-bottom: 250px;
+	align-self: flex-end;
+    margin-bottom:80px;
 }
 .hero-text > p {
 	font-famiy: var(--palanquin);
-	font-size: 1.15em;
+	font-size: 1.5em;
 	font-weight: 700;
 	text-shadow: 1px 1px 2px black;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 	color: var(--secondary-text);
 	text-align: center;
+    padding: 10px;
 }
 
 /* Header/Navigation */
 .header-bg {
 	display: flex;
 	width: 100%;
-	height: 11.5vh;
+	height: 62.5px;
 	background: var(--secondary-bg);
 	border-bottom: 6px dark-grey inset;
 	position: fixed;
@@ -91,51 +93,148 @@ header {
 	flex-direction: column;
 	align-items: center;
 	position: fixed;
-	top: -2px;
+	top: 0;
 }
 
-.logo {
+.logo > h1 {
+	width: 100vw;
+	text-align: center;
 	font-family: var(--radley);
-	font-size: 2.75em;
+	font-size: 2.25em;
 	font-weight: 700px;
-	letter-spacing: 3.5px;
+	letter-spacing: 8px;
 	text-shadow: 1px 1px 3px black;
+	padding-left: 4px;
 }
+
 .nav-wrapper > ul {
+	width: 100vw;
 	display: flex;
 	flecx-direction: row;
+	justify-content: center;
 	list-style: none;
 }
 
+/* pushes nav list up closer to header logo */
+.nav-list {
+	margin: -4px;
+}
+.nav-list > li {
+	padding: 0 6px;
+}
 .nav-list li > a {
 	color: var(--primary-text);
 	text-decoration: none;
 	font-family: var(--radley);
-	font-size: 1.15em;
+	font-size: 1em;
 	font-weight: 600;
 	padding: 0 4px;
 }
 
 .nav-list a:hover {
 	background-color: var(--primary-bg);
-	font-size: 1.35em;
 	transform-origin: center top;
 	opacity: 0.8;
 	border-radius: 5px;
 }
+/* main  */
 
 /* Screen Sizes */
 
-/* mobile screen */
-@media screen and (max-width: 300px) {
+/*  align hero text on smaller screens */
+@media screen and (min-width: 399px) {
+    .hero-text {
+        margin-bottom:80px;
+    }
+    .hero-text > p {
+        font-size: 1.5em;
+        padding: 10px;
 }
 
-/* for tablet and landscape view */
-@media screen (min-width: 700px) and (max-width: 959px) {
+/* Media query: screens (768px and up) */
+@media screen and (min-width: 768px) {
+	.header-bg {
+		height: 65px;
+	}
+	.logo > h1 {
+		font-size: 2.5em;
+		letter-spacing: 10px;
+	}
+	.nav-wrapper > ul {
+		width: 80vw;
+	}
+	.nav-list > li {
+		padding: 0 12px;
+	}
+	.nav-list {
+		margin: -6px;
+	}
+	.nav-list li > a {
+		font-size: 1em;
+	}
+    .hero-text {
+        margin-bottom:120px;
+    }
+    .hero-text > p {
+        font-size: 1.5em;
+        padding: 0 4px;
+    }
+
+/* For screen sizes 920px and up */
+@media screen and (min-width: 920px) {
+	.header-bg {
+		height: 90px;
+	}
+	.logo > h1 {
+		font-size: 3.5em;
+		letter-spacing: 16px;
+	}
+	.nav-list > li {
+		padding: 0 1.75em;
+	}
+	.nav-list {
+		margin: -8px;
+	}
+	.nav-list li > a {
+		font-size: 1.25em;
+	}
+	.hero-text {
+		margin-bottom: 110px;
+
+	}
+	.hero-text > p {
+		font-size: 2.0em;
+		letter-spacing: 1.5px;
+	}
 }
-/* laptop */
-@media and screen (min-width: 768px) {
-}
-/* larger screens */
-@media and screen (min-width: 1280px) {
+
+@media screen and (min-width: 1100px) {
+	.header-bg {
+		height: 110px;
+	}
+
+	.logo > h1 {
+		font-size: 4.5em;
+		letter-spacing: 16px;
+	}
+
+	.nav-list {
+		margin: -12px;
+	}
+
+	.nav-list > li {
+		padding: 0 2.5em;
+	}
+
+	.nav-list li > a {
+		font-size: 1.25em;
+	}
+
+	.hero-text {
+		margin-bottom: 45px;
+	}
+	.hero-text > p {
+		font-size: 2em;
+		letter-spacing: 1.5px;
+	}
 }
