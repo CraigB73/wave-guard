@@ -141,6 +141,7 @@ header {
 
 /* main  */
 
+
 /* section navigation tags */
 h2 {
     margin-top:25px;
@@ -158,6 +159,15 @@ h2 {
 }
 
 
+
+.main-margin{
+    margin: 25px  20px;
+}
+/* pushes footer to bottom of page */
+main {
+    flex: 0 auto; 
+
+}
 
 
 
