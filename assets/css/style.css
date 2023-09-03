@@ -227,9 +227,11 @@ span {
 	line-height: 1.75em;
 }
 /* default image styling */
-img {
+.story-wrapper {
 	width: 80vw;
-	height: 80vw;
+}
+img {
+	width: 100%;
 }
 /* pushes footer to bottom of page */
 main {
