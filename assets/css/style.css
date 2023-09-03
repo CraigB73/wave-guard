@@ -229,19 +229,13 @@ span {
 .gallery-main {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-}
-.story-wrapper {
-	width: 80vw;
-}
-img {
-	width: 100%;
+	justify-content: center;
 }
 .gallery-image-wrapper {
 	display: grid;
-	grid-template-column: auto auto auto auto;
-	gap: 10px;
-	grid: auto / auto auto;
+}
+img {
+	width: 90vw;
 }
 .story-wrapper > p {
 	font-size: 12px;
@@ -252,8 +246,11 @@ img {
 /* registration and contact */
 .register-wrapper {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
 	align-items: flex-start;
+}
+.contact-contact > p {
 }
 /* pushes footer to bottom of page */
 main {
