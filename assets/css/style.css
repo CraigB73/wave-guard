@@ -158,7 +158,7 @@ section > h2 {
 	background-color: var(--primary-main-bg);
 }
 .h2-tag-right {
-	margin-right: -10px;
+	margin-right: -20px;
 	margin-bottom: 20px;
 	margin-left: 50vw;
 	text-align: right;
@@ -212,12 +212,12 @@ h4 ~ p {
 /* Gallery section */
 /*  adds spacing between location */
 span {
-	padding: 0 8px;
+	padding: 0 6px;
 	content: '\00B7';
 }
 .locations {
 	display: block;
-	margin-top: 75px;
+	margin-top: 25px;
 }
 .locations > p {
 	padding: 0 10px 20px 10px;
@@ -226,21 +226,27 @@ span {
 	line-height: 1.75em;
 }
 /* default image styling */
+.
 .gallery-main {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 }
 .gallery-image-wrapper {
-	display: grid;
 }
-img {
+
+.story-wrapper {
 	width: 90vw;
+	margin-bottom: 8px;
 }
 .story-wrapper > p {
+	width: 90vw;
 	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 1.15;
+}
+img {
+	width: 90vw;
 }
 
 /* registration and contact */
