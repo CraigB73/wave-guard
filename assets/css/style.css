@@ -18,6 +18,7 @@
 	--primary-text: #272829;
 	--secondary-text: #fafafa;
 	--alt-text: #fff6e0;
+	--alt-text-secondary: darkblue;
 
 	/* footer styles */
 	--primary-footer-bg: #61677a;
@@ -36,6 +37,9 @@
 	--inner: 2px solid yellow;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: var(--roboto);
 	background-color: var(--primary-bg: #fafafa);
@@ -46,7 +50,6 @@ body {
 header {
 	display: flex;
 	justify-content: center;
-
 }
 .hero-image {
 	background: url('../images/bgimage-surfers.jpg') no-repeat center
@@ -62,7 +65,7 @@ header {
 
 .hero-text {
 	align-self: flex-end;
-    margin-bottom:80px;
+	margin-bottom: 80px;
 }
 .hero-text > p {
 	font-famiy: var(--palanquin);
@@ -72,7 +75,7 @@ header {
 	letter-spacing: 1.5px;
 	color: var(--secondary-text);
 	text-align: center;
-    padding: 10px;
+	padding: 10px;
 }
 
 /* Header/Navigation */
@@ -84,7 +87,7 @@ header {
 	border-bottom: 6px dark-grey inset;
 	position: fixed;
 	top: 0;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 .header-container {
@@ -126,9 +129,10 @@ header {
 	color: var(--primary-text);
 	text-decoration: none;
 	font-family: var(--radley);
-	font-size: 1em;
+	font-size: 0.75em;
 	font-weight: 600;
-	padding: 0 4px;
+	text-transform: uppercase;
+	padding: 0 1px;
 }
 
 .nav-list a:hover {
@@ -138,51 +142,112 @@ header {
 	border-radius: 5px;
 }
 
-
 /* main  */
 
-
-/* section navigation tags */
-h2 {
-    margin-top:25px;
+.main-margin {
+	margin: 25px 20px;
+}
+/* section tags */
+section > h2 {
+	font-size: 0.75em;
 }
 .h2-tag {
-    margin-right: 50vw;
-	padding-left: 8px;
-    background-color:var(--primary-main-bg);
+	margin-left: -20px;
+	margin-right: 50vw;
+	margin-bottom: 20px;
+	padding: 3px 0 3px 8px;
+	background-color: var(--primary-main-bg);
 }
 .h2-tag-right {
-    margin-left: 50vw;
+	margin-right: -10px;
+	margin-bottom: 20px;
+	margin-left: 50vw;
 	text-align: right;
-	padding-right: 8px;
-    background-color:var(--secondary-main-bg);
+	color: var(--primary-main-bg);
+	padding: 3px 8px 3px 0;
+	background-color: var(--secondary-main-bg);
 }
 
+/* about section  */
+.about-main {
+	margin-bottom: 3em;
+}
+.about-main > p {
+	lettter-spacing: 0.75px;
+	font-family: var(--radley);
+}
+.about-main > h3 .about-main > h4 {
+	font-family: var(--palanquin);
+}
+section > h3 {
+	font-family: var(--roboto);
+	font-weight: 600;
+	margin: 16px 0 12px 0;
+	letter-spacing: 1.5px;
+	box-shadow: 2px 2px 5px var(--secondary-main-bg);
+}
+h3 {
+	color: var(--primary-text);
+	padding: 2px 4px;
+	font-weigth: 800;
+}
+h3 + p::first-letter {
+	padding-left: 8px;
+}
 
+h4 {
+	margin: 24px 0 6px 0;
+	color: var(--alt-text-secondary);
+	font-size: 1em;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+h4 ~ p {
+	padding: 0 1em;
+	letter-spacing: 1px;
+}
+.innovation > p:last-child {
+	padding-top: 1rem;
+}
 
-.main-margin{
-    margin: 25px  20px;
+/* Gallery section */
+/*  adds spacing between location */
+span {
+	padding: 0 8px;
+	content: '\00B7';
+}
+.locations {
+	display: block;
+	margin-top: 75px;
+}
+.locations > p {
+	padding: 0 10px 20px 10px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.75em;
+}
+/* default image styling */
+img {
+	width: 80vw;
+	height: 80vw;
 }
 /* pushes footer to bottom of page */
 main {
-    flex: 0 auto; 
-
+	flex: 0 auto;
 }
-
-
 
 /* Screen Sizes */
 
 /*  align hero text on smaller screens */
 @media screen and (min-width: 399px) {
-    .hero-text {
-        margin-bottom:80px;
-    }
-    .hero-text > p {
-        font-size: 1.5em;
-        padding: 10px;
+	.hero-text {
+		margin-bottom: 80px;
+	}
+	.hero-text > p {
+		font-size: 1.5em;
+		padding: 10px;
+	}
 }
-
 /* Media query: screens (768px and up) */
 @media screen and (min-width: 768px) {
 	.header-bg {
@@ -204,14 +269,14 @@ main {
 	.nav-list li > a {
 		font-size: 1em;
 	}
-    .hero-text {
-        margin-bottom:120px;
-    }
-    .hero-text > p {
-        font-size: 1.5em;
-        padding: 0 4px;
-    }
-
+	.hero-text {
+		margin-bottom: 120px;
+	}
+	.hero-text > p {
+		font-size: 1.5em;
+		padding: 0 4px;
+	}
+}
 /* For screen sizes 920px and up */
 @media screen and (min-width: 920px) {
 	.header-bg {
@@ -228,14 +293,13 @@ main {
 		margin: -8px;
 	}
 	.nav-list li > a {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 	.hero-text {
 		margin-bottom: 110px;
-
 	}
 	.hero-text > p {
-		font-size: 2.0em;
+		font-size: 2em;
 		letter-spacing: 1.5px;
 	}
 }
@@ -259,7 +323,7 @@ main {
 	}
 
 	.nav-list li > a {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 
 	.hero-text {

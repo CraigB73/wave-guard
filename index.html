@@ -43,7 +43,7 @@
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#gallery">Gallery</a></li>
-						<li><a href="#signup">Sign-up</a></li>
+						<li><a href="#register">Register</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -51,19 +51,20 @@
 				<p>Join Today for a Cleaner Ocean Tomorrow!</p>
 			</div>
 		</header>
-		<main>
-			<section class="about-main">
-				<h2 id="about" class="h2-tag">Our Mission</h2>
-				<div class="main-margin">
-					<h3>About Operation Clean Ride</h3>
+		<main class="content">
+			<div class="main-margin">
+				<section class="about-main">
+					<h2 id="about" class="h2-tag">Wave Guard</h2>
+					<h3>Operation Clean Ride</h3>
 					<p>
-						At Operation Clean Ride, we are more than just a surf
-						community; we are a dynamic movement passionately
-						dedicated to the restoration and preservation of our
-						precious oceans and beaches. Our mission is clear and
-						resolute: to unite the global surfing tribe in a
-						collective effort to cleanse and rejuvenate the marine
-						world, all while riding the crest of each pristine wave.
+						At Operation Clean Ride, "Wave Guard", we are more than
+						just a surf community; we are a dynamic movement
+						passionately dedicated to the restoration and
+						preservation of our precious oceans and beaches. Our
+						mission is clear and resolute: to unite the global
+						surfing tribe in a collective effort to cleanse and
+						rejuvenate the marine world, all while riding the crest
+						of each pristine wave.
 					</p>
 					<h3>Our Vision</h3>
 					<p>
@@ -80,17 +81,19 @@
 						At Operation Clean Ride, we pursue our mission through
 						three key pillars:
 					</p>
-					<ol>
-						<li>
-							<h4>Collective Action:</h4>
+					<div class="approach-wrapper">
+						<h4>Wave Guard:</h4>
+						<p>
 							We believe in the power of coming together as a
 							community to drive change. Our volunteers, surfers,
 							and supporters worldwide are the driving force
 							behind our efforts to remove marine debris, combat
 							pollution, and protect our coastal ecosystems.
-						</li>
-						<li>
-							<h4>Educational Endeavors:</h4>
+						</p>
+					</div>
+					<div>
+						<h4>Educational Endeavors:</h4>
+						<p>
 							Knowledge isthe key to change. We are committed to
 							educating surfers and the broader public about the
 							importance of ocean conservation, sustainable
@@ -98,9 +101,12 @@
 							workshops, seminars, and online resources, we aim to
 							empower individuals with the information they need
 							to make a positive impact.
-						</li>
-						<li>
-							<h4>Innovation:</h4>
+						</p>
+					</div>
+
+					<div class="innovation">
+						<h4>Innovation:</h4>
+						<p>
 							We understand that addressing the challenges facing
 							our oceans requires innovative solutions. Operation
 							Clean Ride actively supports and promotes the
@@ -112,41 +118,41 @@
 							Together, we can ride the waves of change, ensuring
 							that the oceans remain a sanctuary of delight and
 							harmony for generations to come. Operation Clean
-							Ride - Empowering Surfing Today for a Cleaner Ocean
-							Tomorrow
-						</li>
-					</ol>
-					<section>
-						<h2>Our Mission</h2>
-						<p>
-							At Operation Clean Ride, we're not just a surf
-							community; we're a movement committed to purifying
-							the oceans and beaches we cherish. Our mission is
-							clear: unite the surfing tribe in cleansing the
-							marine world while riding the crest of each pristine
-							wave. Our vision is a world where ocean enthusiasts
-							converge to restore the waters to their natural
-							splendor. Through collective action, educational
-							endeavors, and innovation, we aim to cultivate a
-							sense of stewardship among surfers. Join us in our
-							passionate pursuit to rejuvenate the oceans. Let's
-							ride the waves of change, ensuring the oceans remain
-							a sanctuary of delight and harmony for generations.
-							<br /><br />
-							Operation Clean Ride- Empowering Surfing today for a
-							Cleaner Ocean Tomorrow
+							Ride
 						</p>
-					</section>
-				</div>
-			</section>
-			<section class="gallery-main">
-				<h2 id="gallery" class="h2-tag-right">Global Connection</h2>
-				<div class="main-margin"></div>
-			</section>
-			<section class="signup-main">
-				<h2 id="signup" class="h2-tag">Join Us</h2>
-				<div class="main-margin"></div>
-			</section>
+						<p>
+							- Empowering Surfing Today for a Cleaner Ocean
+							Tomorrow
+						</p>
+					</div>
+				</section>
+				<section class="gallery-main">
+					<h2 id="gallery" class="h2-tag-right">Global Connection</h2>
+					<div class="locations">
+						<p>
+							Pipeline Beach, Oahu, Hawaii
+							<span>&#183;</span>Jeffreys Bay, South
+							Africa<span>&#183;</span>Trestles Beach California,
+							USA <span>&#183;</span>Bondi Beach, Sydney,
+							Australia<span>&#183;</span>Hossegor Beach, Landes,
+							France<span>&#183;</span>Uluwatu Beach, Bali,
+							Indonesia<span>&#183;</span>Banzai Pipeline, Oahu,
+							Hawaii<span>&#183;</span>Teahupo'o, Tahiti,French
+							Polynesia
+						</p>
+					</div>
+					<div class="main-margin gallery-wrapper">
+						<img
+							src="./assets/images/istockphoto-1158445869-612x612.jpg"
+							alt="imgae1"
+						/>
+					</div>
+				</section>
+				<section class="register-main">
+					<h2 id="register" class="h2-tag">Join Us</h2>
+					<div class="main-margin"></div>
+				</section>
+			</div>
 		</main>
 
 		<footer id="footer" class="footer-main"></footer>
@@ -162,15 +168,12 @@
 				const st =
 					window.pageYOffset || document.documentElement.scrollTop;
 				const headerText = document.querySelector('.hero-text');
-				const headerBg = document.querySelector('header');
 				if (st > lastScrollTop) {
 					// Scrolling down, hide the header text
-					headerText.style.opacity = '0';
-					headerBg.style.display = 'flex';
+					headerText.style.opacity = '1';
 				} else {
 					// Scrolling up, show the header text
-					headerText.style.opacity = '1';
-					headerBg.style.display = 'none';
+					headerText.style.opacity = '0';
 				}
 
 				lastScrollTop = st;
