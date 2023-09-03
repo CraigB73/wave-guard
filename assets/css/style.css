@@ -250,7 +250,11 @@ img {
 }
 
 /* registration and contact */
-
+.register-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
 /* pushes footer to bottom of page */
 main {
 	flex: 0 auto;
@@ -269,11 +273,12 @@ main {
 	justify-content: center;
 }
 .social-icons > a {
-	font-size: 2em;
+	font-size: 1.5em;
 	color: var(--icon-primary);
-	padding: 8px 2em;
+	padding: 8px 16px;
 }
 .social-wrapper > p {
+	font-size: 12px;
 	letter-spacing: 1px;
 	padding: 4px 0 8px 0;
 	color: var(--primary-bg);
