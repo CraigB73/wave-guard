@@ -50,6 +50,9 @@
 			<div class="hero-text">
 				<p>Join Today for a Cleaner Ocean Tomorrow!</p>
 			</div>
+			<div class="arrow-down">
+				<i class="fa-solid fa-chevron-down fa-lg"></i>
+			</div>
 		</header>
 		<main class="content">
 			<div class="main-margin">
@@ -241,57 +244,47 @@
 				</section>
 				<section class="register-main">
 					<h2 id="register" class="h2-tag">Join Us</h2>
-					<div class="main-margin register-wrapper">
+					<div class="register-wrapper">
 						<form>
 							<div class="form-container">
-								<div class="row-wrapper">
-									<div class="input-wrapper">
-										<label for="firstname"
-											>First name:</label
-										><br />
-										<input
-											type="text"
-											id="firstname"
-											name="firstname"
-										/>
-									</div>
-									<div class="input-wrapper">
-										<label for="lastname">Last name:</label
-										><br />
-										<input
-											type="text"
-											id="lastname"
-											name="lastname"
-										/>
-									</div>
-								</div>
-								<div class="row-wrapper">
-									<div class="input-wrapper">
-										<label for="phone">Phone :</label><br />
-										<input
-											type="tel"
-											id="phone"
-											name="phone"
-										/>
-									</div>
-									<div class="input-wrapper">
-										<label for="email">Email:</label><br />
-										<input
-											type="email"
-											id="email"
-											name="email"
-										/>
-									</div>
-								</div>
-								<div class="input-wrapper">
-									<label for="textarea">Comments</label><br />
-									<textarea
-										id="textarea"
-										name="textarea"
-										rows="10"
-										cols="35"
-									></textarea>
-								</div>
+								<label for="firstname">First name:</label>
+								<input
+									type="text"
+									id="firstname"
+									name="firstname"
+									class="inputs"
+								/>
+								<label for="lastname">Last name:</label>
+								<input
+									type="text"
+									id="lastname"
+									name="lastname"
+									class="inputs"
+								/>
+								<label for="phone">Phone :</label>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									class="inputs"
+								/>
+								<label for="email">Email:</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="inputs"
+								/>
+
+								<label for="textarea">Comments</label>
+								<textarea
+									id="textarea"
+									name="textarea"
+									rows="10"
+									cols="32"
+									class="inputs"
+								></textarea>
+								
 								<button type="submit">Join today!</button>
 							</div>
 						</form>
@@ -350,7 +343,7 @@
 			crossorigin="anonymous"
 		></script>
 
-		<!-- Add Scroll CSS scroll effect -->
+		<!-- Below is a function to remove hero text and down arrow -->
 		<script>
 			let lastScrollTop = 0;
 
@@ -358,12 +351,15 @@
 				const st =
 					window.pageYOffset || document.documentElement.scrollTop;
 				const headerText = document.querySelector('.hero-text');
+				const arrowDown = document.querySelector('.arrow-down');
 				if (st > lastScrollTop) {
-					// Scrolling down, hide the header text
-					headerText.style.opacity = '1';
-				} else {
-					// Scrolling up, show the header text
+					// Scrolling up, hide the header text
 					headerText.style.opacity = '0';
+					arrowDown.style.display = 'none';
+				} else {
+					// Scrolling down, show the header text
+					headerText.style.opacity = '1';
+					arrowDown.style.display = 'block';
 				}
 
 				lastScrollTop = st;

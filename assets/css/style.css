@@ -60,6 +60,15 @@ header {
 	min-height: 655px;
 	min-width: 280px;
 }
+.arrow-down {
+	position: absolute;
+	bottom: 6px;
+}
+.arrow-down > i {
+	font-size: 40px;
+	color: var(--primary-bg);
+	z-index: 9999;
+}
 /* hero text */
 
 .hero-text {
@@ -226,8 +235,7 @@ span {
 	line-height: 1.75em;
 }
 /* default image styling */
-.
-.gallery-main {
+. .gallery-main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -255,9 +263,33 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	padding: 15px;
+	background-color: var(--secondary-main-bg);
+	border-radius: 8px;
+	opacity: 0.7;
 }
-.contact-contact > p {
+label {
+	color: white;
 }
+.inputs {
+	width: 100%;
+	margin-top: 6px;
+	margin-bottom: 8px;
+	background: transparent;
+	border: 1px solid var(--primary-bg);
+	border-radius: 6px;
+}
+.inputs:not(textarea[cols]) {
+	height: 1.5em;
+}
+textarea {
+	overflow: hidden;
+}
+button {
+	padding: 8px 16px;
+	background-color: var(--primary-bg);
+}
+
 /* pushes footer to bottom of page */
 main {
 	flex: 0 auto;
