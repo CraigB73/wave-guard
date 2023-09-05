@@ -42,14 +42,60 @@ html {
 }
 body {
 	font-family: var(--roboto);
-	background-color: var(--primary-bg: #fafafa);
+	background-color: var(--primary-bg);
 }
-
-/* Hero Image */
 
 header {
 	display: flex;
+	flex-direction: column;
+}
+
+/* Header/Navigation */
+
+.header-container {
+	position: fixed;
+	top: 0.25px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-main-bg);
+}
+
+.logo {
+	width: 55px;
+	padding-top: 6px;
+}
+.nav-wrapper {
+	padding-bottom: 3px;
+}
+.nav-list {
+	display: flex;
+	list-style: none;
+}
+.nav-list li > a {
+	font-family: var(--radley);
+	letter-spacing: 0.75px;
+	color: var(--primary-text);
+	text-decoration: none;
+	padding: 0 6px;
+}
+
+.nav-list li > a:hover {
+	text-decoration: underline;
+	color: var(--primary-bg);
+}
+
+/* Hero Image */
+h1 {
+	color: var(--primary-bg);
+	font-family: var(--palanquin);
+	font-size: 2.75rem;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+	text-shadow: 1px 1px 2px black;
+	margin: 200px auto;
 }
 .hero-image {
 	background: url('../images/bgimage-surfers.jpg') no-repeat center
@@ -60,6 +106,7 @@ header {
 	min-height: 655px;
 	min-width: 280px;
 }
+
 .arrow-down {
 	position: absolute;
 	bottom: 6px;
@@ -70,12 +117,11 @@ header {
 	z-index: 9999;
 }
 /* hero text */
-
-.hero-text {
+.home-text {
 	align-self: flex-end;
 	margin-bottom: 80px;
 }
-.hero-text > p {
+.home-text > p {
 	font-famiy: var(--palanquin);
 	font-size: 1.5em;
 	font-weight: 700;
@@ -86,69 +132,7 @@ header {
 	padding: 10px;
 }
 
-/* Header/Navigation */
-.header-bg {
-	display: flex;
-	width: 100%;
-	height: 62.5px;
-	background: var(--secondary-bg);
-
-	position: fixed;
-	top: 0;
-	opacity: 1;
-}
-
-.header-container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: fixed;
-	top: 0;
-}
-
-.logo > h1 {
-	width: 100vw;
-	text-align: center;
-	font-family: var(--radley);
-	font-size: 2.25em;
-	font-weight: 700px;
-	letter-spacing: 8px;
-	text-shadow: 1px 1px 3px black;
-	padding-left: 4px;
-}
-
-.nav-wrapper > ul {
-	width: 100vw;
-	display: flex;
-	flecx-direction: row;
-	justify-content: center;
-	list-style: none;
-}
-
 /* pushes nav list up closer to header logo */
-.nav-list {
-	margin: -4px;
-}
-.nav-list > li {
-	padding: 0 6px;
-}
-.nav-list li > a {
-	color: var(--primary-text);
-	text-decoration: none;
-	font-family: var(--radley);
-	font-size: 0.75em;
-	font-weight: 600;
-	text-transform: uppercase;
-	padding: 0 1px;
-}
-
-.nav-list a:hover {
-	background-color: var(--primary-bg);
-	transform-origin: center top;
-	opacity: 0.8;
-	border-radius: 5px;
-}
 
 /* main  */
 
@@ -239,22 +223,43 @@ span {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 25px;
 }
 .gallery-image-wrapper {
+	display: grid;
+	gap: 12px;
+	
 }
+.card-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-item; center;
+	background: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px var(--secondary-main-bg);
+}
+.card-image-container {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 
-.story-wrapper {
-	width: 90vw;
-	margin-bottom: 8px;
-}
-.story-wrapper > p {
-	width: 90vw;
-	font-size: 12px;
-	letter-spacing: 1px;
-	line-height: 1.15;
+	width: 100%;
 }
 img {
-	width: 90vw;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	width: 100%;
+
+}
+.card-text-container {
+	width: 100%;
+}
+
+.card-text-container > p {
+	width: 100%;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	padding: 4px;
 }
 
 /* registration and contact */
@@ -343,32 +348,6 @@ main {
 }
 /* Media query: screens (768px and up) */
 @media screen and (min-width: 768px) {
-	.header-bg {
-		height: 65px;
-	}
-	.logo > h1 {
-		font-size: 2.5em;
-		letter-spacing: 10px;
-	}
-	.nav-wrapper > ul {
-		width: 80vw;
-	}
-	.nav-list > li {
-		padding: 0 12px;
-	}
-	.nav-list {
-		margin: -6px;
-	}
-	.nav-list li > a {
-		font-size: 1em;
-	}
-	.hero-text {
-		margin-bottom: 120px;
-	}
-	.hero-text > p {
-		font-size: 1.5em;
-		padding: 0 4px;
-	}
 	.register-wrapper {
 		display: flex;
 		flex-direction: row;
