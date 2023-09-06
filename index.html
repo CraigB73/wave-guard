@@ -59,8 +59,9 @@
 		</header>
 		<main class="content">
 			<div class="main-margin">
-				<section class="about-main">
-					<h2 id="about" class="h2-tag">Wave Guard</h2>
+				<section id="about" class="about-main">
+					<div></div>
+					<h2 class="h2-tag">About Wave Guard</h2>
 					<h3>Operation Clean Ride</h3>
 					<p>
 						At Operation Clean Ride, "Wave Guard", we are more than
@@ -132,8 +133,8 @@
 						</p>
 					</div>
 				</section>
-				<section class="">
-					<h2 id="gallery" class="h2-tag-right">Global Connection</h2>
+				<section id="gallery">
+					<h2 class="h2-tag-right">Global Connection</h2>
 					<div class="gallery-main">
 						<div class="locations">
 							<p>
@@ -280,6 +281,7 @@
 						</div>
 					</div>
 				</section>
+
 				<section class="register-main">
 					<h2 id="register" class="h2-tag">Join Us</h2>
 
@@ -330,9 +332,9 @@
 
 						<div class="contact-container">
 							<div class="contact-title-wrapper">
-								<div>
+								<div class="logo-contact-wrapper">
 									<img
-										class="logo logo-contact"
+										class="logo-contact"
 										src="./assets/images/guard_logo.webp"
 										alt="Logo: Operation Clean Ride with a standing surf board "
 									/>
@@ -365,16 +367,28 @@
 		<footer id="footer" class="footer-main">
 			<div class="social-wrapper">
 				<div class="social-icons">
-					<a href="https://www.facebook.com" class="icon"
+					<a
+						href="https://www.facebook.com"
+						aria-label="link to facebook"
+						class="icon"
 						><i class="fa-brands fa-facebook"></i
 					></a>
-					<a href="https://linkedin.com" class="icon"
+					<a
+						href="https://linkedin.com"
+						aria-label="link to linkedin"
+						class="icon"
 						><i class="fa-brands fa-linkedin"></i
 					></a>
-					<a href="https://www.twitter.com" class="icon"
+					<a
+						href="https://www.twitter.com"
+						aria-label="link to twitter"
+						class="icon"
 						><i class="fa-brands fa-square-twitter"></i
 					></a>
-					<a href="https://www.instagram.com" class="icon"
+					<a
+						href="https://www.instagram.com"
+						aria-label="link to instagram"
+						class="icon"
 						><i class="fa-brands fa-instagram"></i
 					></a>
 				</div>
@@ -390,28 +404,5 @@
 			src="https://kit.fontawesome.com/577e5ba10c.js"
 			crossorigin="anonymous"
 		></script>
-
-		<!-- Below is a function to remove hero text and down arrow -->
-		<script>
-			let lastScrollTop = 0;
-
-			window.addEventListener('scroll', () => {
-				const st =
-					window.pageYOffset || document.documentElement.scrollTop;
-				const headerText = document.querySelector('.hero-text');
-				const arrowDown = document.querySelector('.arrow-down');
-				if (st > lastScrollTop) {
-					// Scrolling up, hide the header text
-					headerText.style.opacity = '0';
-					arrowDown.style.display = 'none';
-				} else {
-					// Scrolling down, show the header text
-					headerText.style.opacity = '1';
-					arrowDown.style.display = 'block';
-				}
-
-				lastScrollTop = st;
-			});
-		</script>
 	</body>
 </html>

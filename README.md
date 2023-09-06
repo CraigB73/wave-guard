@@ -28,26 +28,31 @@
 
 <p><strong>Research:</strong> Determining potentional website users, I decided on the surfing community.  The surfing community spans globally and all share a special connection with ocean and understand the importance of keeping it clean.</p>
 
-<p><strong>User:</strong> As a user and gowning up and living near different oceans around the world I would like to know how I can encourage and contribute to bring awerness in creating change on maintaining a clean and healthy ocean.</p>
+<p><strong>As a User:</strong>
+
+<ul>
+<li>I like to view stories of how other members are contributing </li>
+<li>How to sign up</li>
+<li>How to contact the orginzation</li>
+</ul>
 
 <p><strong>Scope:</strong> Wave Guard's website will display a direct navigation focusing on three section: Home, Gallery, and Signup sections, providing seamless navigation. Each section will be accessable by using clearly displayed navigation links that will be displayed when scrolling between section. The website's home page will display an inpiratonal image and message. Information in the gallery section will provide images and clear description when provided by users to display their contribution to clean beaches and oceans. Method to signup should be easy and direct in becoming a member of the Wave Guard</p>
 
 <h3>Strutural planning</h3>
-
-<p>To achieve the websits goal of spreading globally it was detemined to create a website with four section: Home, Gallery, Signup and Contact. </P>
+<p></P>
 
 <h4><Strong>Home:</Strong></h4><p></p>
 <h4><Strong>Gallery:</Strong></h4><p></p>
-<h4><Strong>Signup:</Strong></h4><p></p>
-<h4><Strong>Contact:</Strong></h4><p></p>
+<h4><Strong>Registation:</Strong></h4><p></p>
 
-<h4><Strong>Wirframes:</Strong></h4><p></p>
-
+<h4><Strong>Wirframes:</Strong></h4>
+<p>Color Palette and Fonts</p>
+<img scr="./assets/images/design_templets/Screenshot 2023-09-06 at 13.12.22.png">
 <h4><Strong>Style</Strong></h4><p></p>
 
 <h2>Technologies Used</h2>
 
-<h3>Languages</h3>
+<h3>Languages:</h3>
 <ul>
 <li>HTML5</li>
 <li>CSS3</li>
@@ -62,15 +67,20 @@
 
 <h2>Troublingshooting and testing</h2>
 
+
 <h3>Troubleshooting</h3>
 <p></p>
 <h3>Testing</h3>
-
+<ul>
+<li>LightHouse for accessibility </li>
+<li>WC3 Validator for HTML and CSS</li>
+</ul>
 <h2>Bugs</h2>
 
 <h3>Bugs Found</h3>
 <ul><li>Display later if any found</li></ul>
 <h2>Deployment</h2>
+<p>Using GitHub pages to deploy website</p>
 <ul>
 <li></li></ul>
 <h2>Credits and Acknowledgements</h2>

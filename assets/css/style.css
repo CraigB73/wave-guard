@@ -12,29 +12,25 @@
 	--primary-text: #272829;
 
 	/* main styles */
-	--primary-main-bg: #d9d9d9;
-	--secondary-main-bg: #61677a;
-	--alt-bg: #fff6e0;
+	--primary-main-bg: #967e76;
+	--secondary-main-bg: #d7c0ae;
+	--alt-bg: #9babb8;
 	--primary-text: #272829;
 	--secondary-text: #fafafa;
-	--alt-text: #fff6e0;
-	--alt-text-secondary: darkblue;
+	--alt-text: #eee3cb;
+	--alt-text-secondary: #272928;
 
 	/* footer styles */
 	--primary-footer-bg: #61677a;
 	--secondary-footer-bg: #fff6e0;
 	--primary-text: #272829;
-	--icon-primary: #fff6e0;
+	--icon-primary: #eee3cb;
 	--icon-secondary: #61677a;
 
 	/* fonts */
 	--roboto: 'Roboto Flex', sans-serif;
 	--radley: 'Radley', roboto, sans-serif;
 	--palanquin: 'Palanquin Dark', roboto, sans-serif;
-
-	/* for testing */
-	--outter: 1px solid red;
-	--inner: 2px solid yellow;
 }
 
 html {
@@ -78,7 +74,7 @@ header {
 .nav-list li > a {
 	font-family: var(--radley);
 	letter-spacing: 0.75px;
-	color: var(--primary-text);
+	color: var(--secondary-text);
 	text-decoration: none;
 	padding: 0 6px;
 }
@@ -90,7 +86,7 @@ header {
 
 /* Hero Image */
 h1 {
-	color: var(--primary-bg);
+	color: var(--secondary-text);
 	font-family: var(--palanquin);
 	font-size: 2.75rem;
 	letter-spacing: 1.5px;
@@ -108,17 +104,15 @@ h1 {
 	min-width: 280px;
 }
 
-.arrow-down {
-}
 .arrow-down > i {
 	font-size: 40px;
-	color: var(--primary-bg);
-	margin-top: 40px;
+	color: var(--secondary-text);
+	margin-top: 130px;
 }
 /* hero text */
 
 .home-text > p {
-	margin-top: 100px;
+	margin-top: 150px;
 	font-famiy: var(--palanquin);
 	font-size: 1.5em;
 	font-weight: 700;
@@ -133,30 +127,33 @@ h1 {
 /* main  */
 
 .main-margin {
-	margin: 25px 20px;
+	margin: 75px 20px;
 }
 /* section tags */
 section > h2 {
 	font-size: 0.75em;
+	font-weight: 700;
+	color: var(--secondary-text);
 }
 .h2-tag {
 	margin-left: -20px;
-	margin-right: 50vw;
-	margin-bottom: 32px;
+	width: 55%;
+	margin-bottom: 50px;
 	padding: 3px 0 3px 8px;
 	background-color: var(--primary-main-bg);
 }
 .h2-tag-right {
+	margin-top: 150px;
 	margin-right: -20px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	margin-left: 50vw;
 	text-align: right;
-	color: var(--primary-main-bg);
 	padding: 3px 8px 3px 0;
-	background-color: var(--secondary-main-bg);
+	background-color: var(--primary-main-bg);
 }
 
 /* about section  */
+
 .about-main {
 	margin-bottom: 3em;
 }
@@ -164,6 +161,7 @@ section > h2 {
 	lettter-spacing: 0.75px;
 	font-family: var(--radley);
 }
+
 .about-main > h3 .about-main > h4 {
 	font-family: var(--palanquin);
 }
@@ -186,6 +184,7 @@ h3 + p::first-letter {
 h4 {
 	margin: 24px 0 6px 0;
 	color: var(--alt-text-secondary);
+	font-family: var(--radley);
 	font-size: 1em;
 	font-weight: 900;
 	letter-spacing: 1px;
@@ -237,7 +236,6 @@ span {
 .card-image-container {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-
 	width: 100%;
 }
 img {
@@ -258,6 +256,7 @@ img {
 
 /* registration and contact */
 .register-main {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	margin-top: 50px;
@@ -267,9 +266,6 @@ img {
 	flex-direction: column;
 	align-items: center;
 	padding: 8px;
-	/* background-color: var(--primary-bg);
-	box-shadow: 2px 2px 2px 2px grey;
-	border-radius: 8px; */
 }
 form {
 	display: flex;
@@ -302,19 +298,25 @@ button {
 }
 /* Contact */
 .contact-container {
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 8px;
+	padding: 16px 0;
+	margin-top: 33px;
+	position: relative;
+	bottom: -33px;
+	background: var(--secondary-main-bg);
 }
 .contact-title-wrapper {
-	width: 80%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
 }
-.contact-title {
-	padding-right: 15px;
+.logo-contact-wrapper {
+	margin: 0 auto;
+}
+.logo-contact {
+	width: 70px;
 }
 .contact-title,
 h3 p {
@@ -343,6 +345,7 @@ main {
 /* footer */
 
 .social-wrapper {
+	height: 75px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -355,11 +358,13 @@ main {
 .social-icons {
 	display: flex;
 	justify-content: center;
+	margin-top: 6px;
 }
 .social-icons > a {
 	font-size: 1.5em;
 	color: var(--icon-primary);
-	padding: 8px 16px;
+
+	padding: 6px;
 }
 .social-wrapper > p {
 	font-size: 12px;
@@ -368,17 +373,115 @@ main {
 	color: var(--primary-bg);
 }
 
-/* Screen Sizes */
+/* Media query:*/
+/* small screen */
+@media screen and (max-width: 300px) {
+	.home-text > p {
+		margin-top: 86px;
+		font-size: 1.5em;
+	}
+}
+/* larger mobile */
+@media screen and (min-width: 499px) {
+	.logo {
+		width: 75px;
+		padding-top: 6px;
+	}
+	. .nav-list li > a {
+		font-size: 1.25rem;
+		padding: 1rem;
+	}
 
-/*  align hero text on smaller screens */
-@media screen and (min-width: 399px) {
+	/* hero text */
+	h1 {
+		width: 100%;
+		text-align: center;
+		color: var(--primary-bg);
+		font-family: var(--palanquin);
+		font-size: 4rem;
+		letter-spacing: 3px;
+	}
+	.home-text > p {
+		margin-top: 140px;
+		font-size: 1.5em;
+	}
+	.arrow-down > i {
+		margin-top: 40px;
+	}
+
+	section > h2 {
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	/* Gallery Cards */
+
+	.gallery-image-wrapper {
+		grid-template-columns: auto auto;
+		gap: 12px;
+	}
+
+	/* registration/contact */
+	.contact-container {
+		position: relative;
+		top: 40;
+	}
 }
-/* Media query: screens (768px and up) */
-@media screen and (min-width: 768px) {
-}
-/* For screen sizes 920px and up */
-@media screen and (min-width: 920px) {
+/*  medium / tablets screens */
+@media screen and (min-width: 767px) {
+	.nav-list li > a {
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+	h1 {
+		font-size: 4.5rem;
+		letter-spacing: 3px;
+	}
+	.header-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.logo {
+		margin: 6px 0 6px 100px;
+	}
+	.home-text > p {
+		font-size: 1.5em;
+	}
+	/* registration section */
+
+	.register-wrapper {
+		flex-direction: row;
+		box-shadow: 2px 2px 4px 2px grey;
+		border-radius: 10px;
+		gap: 16px;
+	}
+	form {
+		width: 50%;
+	}
+	.contact-container {
+		width: 50%;
+		bottom: 30px;
+		padding: 50px 0;
+
+		border-radius: 10px;
+	}
+	.logo-contact {
+		width: 150px;
+		margin-bottom: 26px;
+	}
+	footer {
+		margin-top: 10px;
+	}
 }
 
-@media screen and (min-width: 1100px) {
+/* large screens*/
+@media screen and (max-width: 920px) {
+	.home-text > p {
+		margin-top: 140px;
+		font-size: 1.5em;
+	}
+	.arrow-down > i {
+		margin-top: 45px;
+	}
 }
