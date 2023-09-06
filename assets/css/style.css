@@ -48,6 +48,7 @@ body {
 header {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 /* Header/Navigation */
@@ -95,7 +96,7 @@ h1 {
 	letter-spacing: 1.5px;
 	font-weight: 700;
 	text-shadow: 1px 1px 2px black;
-	margin: 200px auto;
+	margin: 175px auto;
 }
 .hero-image {
 	background: url('../images/bgimage-surfers.jpg') no-repeat center
@@ -108,28 +109,23 @@ h1 {
 }
 
 .arrow-down {
-	position: absolute;
-	bottom: 6px;
 }
 .arrow-down > i {
 	font-size: 40px;
 	color: var(--primary-bg);
-	z-index: 9999;
+	margin-top: 40px;
 }
 /* hero text */
-.home-text {
-	align-self: flex-end;
-	margin-bottom: 80px;
-}
+
 .home-text > p {
+	margin-top: 100px;
 	font-famiy: var(--palanquin);
 	font-size: 1.5em;
 	font-weight: 700;
 	text-shadow: 1px 1px 2px black;
 	letter-spacing: 1.5px;
-	color: var(--secondary-text);
 	text-align: center;
-	padding: 10px;
+	color: var(--secondary-text);
 }
 
 /* pushes nav list up closer to header logo */
@@ -146,7 +142,7 @@ section > h2 {
 .h2-tag {
 	margin-left: -20px;
 	margin-right: 50vw;
-	margin-bottom: 20px;
+	margin-bottom: 32px;
 	padding: 3px 0 3px 8px;
 	background-color: var(--primary-main-bg);
 }
@@ -228,12 +224,11 @@ span {
 .gallery-image-wrapper {
 	display: grid;
 	gap: 12px;
-	
 }
 .card-wrapper {
 	display: flex;
 	flex-direction: column;
-	align-item; center;
+	align-items: center;
 	background: white;
 	border: 1px solid black;
 	border-radius: 10px;
@@ -249,7 +244,6 @@ img {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	width: 100%;
-
 }
 .card-text-container {
 	width: 100%;
@@ -263,21 +257,22 @@ img {
 }
 
 /* registration and contact */
+.register-main {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
 .register-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 16px;
-	background-color: var(--primary-bg);
+	padding: 8px;
+	/* background-color: var(--primary-bg);
 	box-shadow: 2px 2px 2px 2px grey;
-	border-radius: 8px;
-	opacity: 0.7;
+	border-radius: 8px; */
 }
 form {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
 	padding: 15px;
 	background-color: rgba(253, 255, 254, 0.9);
 	border: 1px solid gray;
@@ -303,6 +298,41 @@ textarea {
 button {
 	padding: 8px 16px;
 	background-color: var(--primary-bg);
+	border-radius: 6px;
+}
+/* Contact */
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8px;
+}
+.contact-title-wrapper {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-title {
+	padding-right: 15px;
+}
+.contact-title,
+h3 p {
+	letter-spacing: 2px;
+	text-align: center;
+}
+.contact-title:last-child {
+	padding-top: 4px;
+	font-size: 12px;
+}
+.contact-info-wrapper {
+	margin-top: 12px;
+	width: 100%;
+}
+.contact-info-wrapper > p {
+	text-align: center;
+	font-size: 12px;
+	line-height: 12px;
 }
 
 /* pushes footer to bottom of page */
@@ -317,6 +347,10 @@ main {
 	flex-direction: column;
 	align-items: center;
 	background: var(--primary-footer-bg);
+}
+.social-website > a {
+	text-decoration: none;
+	color: var(--icon-primary);
 }
 .social-icons {
 	display: flex;
@@ -338,76 +372,13 @@ main {
 
 /*  align hero text on smaller screens */
 @media screen and (min-width: 399px) {
-	.hero-text {
-		margin-bottom: 80px;
-	}
-	.hero-text > p {
-		font-size: 1.5em;
-		padding: 10px;
-	}
 }
 /* Media query: screens (768px and up) */
 @media screen and (min-width: 768px) {
-	.register-wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
 }
 /* For screen sizes 920px and up */
 @media screen and (min-width: 920px) {
-	.header-bg {
-		height: 90px;
-	}
-	.logo > h1 {
-		font-size: 3.5em;
-		letter-spacing: 16px;
-	}
-	.nav-list > li {
-		padding: 0 1.75em;
-	}
-	.nav-list {
-		margin: -8px;
-	}
-	.nav-list li > a {
-		font-size: 1em;
-	}
-	.hero-text {
-		margin-bottom: 110px;
-	}
-	.hero-text > p {
-		font-size: 2em;
-		letter-spacing: 1.5px;
-	}
 }
 
 @media screen and (min-width: 1100px) {
-	.header-bg {
-		height: 110px;
-	}
-
-	.logo > h1 {
-		font-size: 4.5em;
-		letter-spacing: 16px;
-	}
-
-	.nav-list {
-		margin: -12px;
-	}
-
-	.nav-list > li {
-		padding: 0 2.5em;
-	}
-
-	.nav-list li > a {
-		font-size: 1em;
-	}
-
-	.hero-text {
-		margin-bottom: 45px;
-	}
-	.hero-text > p {
-		font-size: 2em;
-		letter-spacing: 1.5px;
-	}
 }
