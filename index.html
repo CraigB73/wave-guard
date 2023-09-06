@@ -32,9 +32,16 @@
 	</head>
 	<body>
 		<header class="hero-image" id="home">
-			<h1>Wave Guard</h1>
-			<div class="home-text">
-				<p>Join Today for a Cleaner Ocean Tomorrow!</p>
+			<div class="hero-text-wrapper">
+				<div class="h1">
+					<h1>Wave Guard</h1>
+				</div>
+				<div class="hero-p">
+					<p>Join Today for a Cleaner Ocean Tomorrow!</p>
+				</div>
+				<div class="arrow-down">
+					<i class="fa-solid fa-chevron-down fa-lg"></i>
+				</div>
 			</div>
 			<div class="header-container">
 				<div>
@@ -46,22 +53,22 @@
 				</div>
 				<nav class="nav-wrapper">
 					<ul class="nav-list">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#gallery">Gallery</a></li>
-						<li><a href="#register">Register</a></li>
+						<li><a href="#home" name="home">Home</a></li>
+						<li><a href="#about" name="about">About</a></li>
+						<li><a href="#gallery" name="gallery">Gallery</a></li>
+						<li>
+							<a href="#register" name="register">Register</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="arrow-down">
-				<i class="fa-solid fa-chevron-down fa-lg"></i>
-			</div>
 		</header>
-		<main class="content">
+
+		<main class="spacer" class="content">
 			<div class="main-margin">
-				<section id="about" class="about-main">
-					<div></div>
-					<h2 class="h2-tag">About Wave Guard</h2>
+				<section class="about-main">
+					<h2 class="h2-tag" id="about">About Wave Guard</h2>
+
 					<h3>Operation Clean Ride</h3>
 					<p>
 						At Operation Clean Ride, "Wave Guard", we are more than
@@ -278,6 +285,22 @@
 									</p>
 								</div>
 							</div>
+							<div class="blank-card">
+								<div class="blank-card-image-container">
+										<img
+											class="logo-contact"
+											src="./assets/images/guard_logo.webp"
+											alt="Logo: Operation Clean Ride with a standing surf board "
+										/>
+									
+								</div>
+								<div class="blank-card-text-container">
+									<p>
+										Add and share your story here!
+									</p>
+								</div>
+							</div>
+						</div>
 						</div>
 					</div>
 				</section>
@@ -325,8 +348,12 @@
 									cols="32"
 									class="inputs"
 								></textarea>
-
-								<button type="submit">Join today!</button>
+								<div class="call-to-action">
+									<div><button id="welcome-button"type="submit" aria-label="register Button">Join today!</button></div>
+								
+									
+								</div>
+								
 							</div>
 						</form>
 
@@ -368,30 +395,39 @@
 			<div class="social-wrapper">
 				<div class="social-icons">
 					<a
-						href="https://www.facebook.com"
+						href="https://www.facebook.com/"
+						target="_blank"
+						rel="noopener"
 						aria-label="link to facebook"
 						class="icon"
-						><i class="fa-brands fa-facebook"></i
+						><i class="fa-brands fa-facebook/"></i
 					></a>
 					<a
-						href="https://linkedin.com"
+						href="https://linkedin.com/"
+						target="_blank"
+						rel="noopener"
 						aria-label="link to linkedin"
 						class="icon"
 						><i class="fa-brands fa-linkedin"></i
 					></a>
 					<a
-						href="https://www.twitter.com"
+						href="https://www.twitter.com/"
+						target="_blank"
+						rel="noopener"
 						aria-label="link to twitter"
 						class="icon"
 						><i class="fa-brands fa-square-twitter"></i
 					></a>
 					<a
-						href="https://www.instagram.com"
+						href="https://www.instagram.com/"
+						target="_blank"
+						rel="noopener"
 						aria-label="link to instagram"
 						class="icon"
 						><i class="fa-brands fa-instagram"></i
 					></a>
 				</div>
+				
 				<p class="social-website">
 					<a href="#home" aria-label="link to web site"
 						>www.operationcleanride.org</a
@@ -404,5 +440,18 @@
 			src="https://kit.fontawesome.com/577e5ba10c.js"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			
+			const welcomeBtn = document.querySelector('#welcome-button');
+			const donationBtn = document.querySelector('#donation-button');
+			welcomeBtn.addEventListener('click', () => {
+				alert('Welcome to the GUARD!')
+				style.backgroundColor = 'blue';
+			});
+			donationBtn.addEventListener('click', () => {
+				alert('Thank you for your contribution!')
+			});
+		</script>
+		
 	</body>
 </html>
