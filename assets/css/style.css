@@ -62,15 +62,9 @@ header {
 .logo {
 	width: 55px;
 	padding-top: 6px;
-	position: sticky;
-	top: 0;
-	z-index: 100;
 }
 .nav-wrapper {
 	padding-bottom: 3px;
-	position: sticky;
-	top: 0;
-	z-index: 100;
 }
 .nav-list {
 	display: flex;
@@ -142,7 +136,7 @@ h1 {
 
 .main-margin {
 	margin: 20px 20px 0 25px;
-	padding-top: 200px;
+	padding-top: 2px;
 }
 /* section tags */
 
@@ -153,14 +147,12 @@ section > h2 {
 }
 .h2-tag {
 	width: 55%;
-	margin-left: -20px;
-	margin-bottom: 50px;
+
 	padding: 3px 0 3px 8px;
 	background-color: var(--primary-main-bg);
 }
 .h2-tag-right {
 	margin-top: 50px;
-	margin-right: -20px;
 	margin-bottom: 50px;
 	margin-left: 50vw;
 	text-align: right;
@@ -192,10 +184,6 @@ section > h3 {
 	box-shadow: 2px 2px 5px var(--secondary-main-bg);
 }
 
-h3 + p::first-letter {
-	padding-left: 8px;
-}
-
 h4 {
 	margin: 24px 0 6px 0;
 	color: var(--alt-text-secondary);
@@ -208,6 +196,7 @@ h4 ~ p {
 	padding: 0 1em;
 	letter-spacing: 1px;
 }
+
 .innovation > p:last-child {
 	padding-top: 1rem;
 }
@@ -218,16 +207,19 @@ span {
 	padding: 0 6px;
 	content: '\00B7';
 }
+
 .locations {
 	display: block;
 	margin-top: 25px;
 }
+
 .locations > p {
 	padding: 0 10px 20px 10px;
 	font-size: 14px;
 	text-align: center;
 	line-height: 1.75em;
 }
+
 /* default image styling */
 
 . .gallery-main {
@@ -236,10 +228,12 @@ span {
 	align-items: center;
 	padding-bottom: 25px;
 }
+
 .gallery-image-wrapper {
 	display: grid;
 	gap: 12px;
 }
+
 .card-wrapper {
 	height: 100%;
 	display: flex;
@@ -250,16 +244,19 @@ span {
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px var(--secondary-main-bg);
 }
+
 .card-image-container {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	width: 100%;
 }
+
 img {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	width: 100%;
 }
+
 .card-text-container {
 	width: 100%;
 }
@@ -270,6 +267,7 @@ img {
 	letter-spacing: 1.5px;
 	padding: 4px;
 }
+
 .blank-card {
 	height: 100%;
 	display: none;
@@ -280,12 +278,15 @@ img {
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px var(--secondary-main-bg);
 }
+
 .blank-card-image-container {
 	padding-top: 16px;
 }
+
 .blank-card-text-container > p {
 	font-size: 1.5em;
 }
+
 /* registration and contact */
 .register-main {
 	width: 100%;
@@ -294,12 +295,14 @@ img {
 	padding: 0 16px;
 	margin-top: 50px;
 }
+
 .register-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 8px;
 }
+
 form {
 	display: flex;
 	padding: 15px;
@@ -307,9 +310,11 @@ form {
 	border: 1px solid gray;
 	border-radius: 8px;
 }
+
 label {
 	color: gray;
 }
+
 .inputs {
 	width: 100%;
 	margin-top: 6px;
@@ -318,26 +323,43 @@ label {
 	border: 1px solid gray;
 	border-radius: 6px;
 }
+
 .inputs:not(textarea[cols]) {
 	height: 1.5em;
 }
+
 textarea {
 	overflow: hidden;
 }
+
 .call-to-action {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
+
 button {
 	margin: 0 20px;
 	padding: 8px 16px;
+	font-weight: 600;
 	background-color: var(--primary-bg);
 	border-radius: 6px;
+	text-transform: uppercase;
 }
-#welcome-button:active {
-	background-color: #9ccc91;
+
+/* Initially hide the message */
+.hidden-message {
+	display: none;
+}
+
+/* Style the revealed message */
+#message.revealed {
+	display: block;
+	color: #007bff; /* Change the color as needed */
+	font-size: 18px; /* Change the font size as needed */
+	font-weight: bold;
+	margin-top: 10px; /* Add spacing if necessary */
 }
 /* Contact */
 .contact-container {
@@ -351,29 +373,36 @@ button {
 	bottom: -33px;
 	background: var(--secondary-main-bg);
 }
+
 .contact-title-wrapper {
 	display: flex;
 	flex-direction: column;
 }
+
 .logo-contact-wrapper {
 	margin: 0 auto;
 }
+
 .logo-contact {
 	width: 70px;
 }
+
 .contact-title,
 h3 p {
 	letter-spacing: 2px;
 	text-align: center;
 }
+
 .contact-title:last-child {
 	padding-top: 4px;
 	font-size: 12px;
 }
+
 .contact-info-wrapper {
 	margin-top: 12px;
 	width: 100%;
 }
+
 .contact-info-wrapper > p {
 	text-align: center;
 	font-size: 12px;
@@ -394,20 +423,18 @@ main {
 	align-items: center;
 	background: var(--primary-footer-bg);
 }
+
 .social-website > a {
 	text-decoration: none;
 	color: var(--icon-primary);
 }
+
 .social-icons {
 	display: flex;
 	justify-content: center;
 	margin-top: 6px;
 }
-.social-icons > a {
-	font-size: 1.5em;
-	color: var(--icon-primary);
-	padding: 6px;
-}
+
 .social-wrapper > p {
 	font-size: 12px;
 	letter-spacing: 1px;
