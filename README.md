@@ -80,7 +80,7 @@
 <h3>Bugs Found</h3>
 <ul><li>Display later if any found</li></ul>
 <h2>Deployment</h2>
-<p>Using GitHub pages to deploy website</p>
+<p>[Using GitHub pages to deploy website](https://craigb73.github.io/wave-guard/)</p>
 <ul>
 <li></li></ul>
 <h2>Credits and Acknowledgements</h2>

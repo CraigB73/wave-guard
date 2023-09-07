@@ -41,17 +41,17 @@ body {
 	background-color: var(--primary-bg);
 }
 
+/* Header/Navigation */
 header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-/* Header/Navigation */
-
 .header-container {
 	position: fixed;
-	top: 0.25px;
+
+	top: 0px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -95,7 +95,7 @@ h1 {
 	margin: 175px auto;
 }
 .hero-image {
-	background: url('../images/bgimage-surfers.jpg') no-repeat center
+	background: url('../images/bgimage-surfers.png') no-repeat center
 		center/cover;
 	width: 100%;
 	height: 100vh;
@@ -214,6 +214,7 @@ span {
 	line-height: 1.75em;
 }
 /* default image styling */
+
 . .gallery-main {
 	display: flex;
 	flex-direction: column;
