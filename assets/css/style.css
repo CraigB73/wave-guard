@@ -109,10 +109,8 @@ h1 {
 }
 
 /* hero text */
-.hero-p {
-	margin-top: 200px;
-}
-.hero-p > p {
+
+.hero-text > p {
 	font-famiy: var(--palanquin);
 	font-size: 1.5em;
 	font-weight: 700;
@@ -121,8 +119,11 @@ h1 {
 	letter-spacing: 1.5px;
 	color: var(--white);
 }
+.hero-text {
+	margin-top: 140px;
+}
 .arrow-down {
-	margin-top: 60px;
+	margin-top: 20px;
 }
 .arrow-down > i {
 	font-size: 40px;
@@ -140,23 +141,12 @@ h1 {
 /* section tags */
 
 section > h2 {
+	width: 75%;
+	color: var(--white);
 	font-size: 0.75em;
 	font-weight: 700;
 	margin-bottom: 2em;
-	color: var(--white);
-}
-.h2-tag {
-	width: 55%;
-
-	padding: 3px 0 3px 8px;
-	background-color: var(--darkgray);
-}
-.h2-tag-right {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: 50vw;
-	text-align: right;
-	padding: 3px 8px 3px 0;
+	padding: 4px 0 3px 8px;
 	background-color: var(--darkgray);
 }
 
@@ -262,11 +252,11 @@ img {
 	width: 100%;
 }
 
-.card-text-container {
+.card-text-wrapper {
 	width: 100%;
 }
 
-.card-text-container > p {
+.card-text-wrapper > p {
 	width: 100%;
 	font-size: 12px;
 	letter-spacing: 1.5px;
@@ -288,7 +278,7 @@ img {
 	padding-top: 16px;
 }
 
-.blank-card-text-container > p {
+.blank-card-text-wrapper > p {
 	font-size: 1.5em;
 }
 
@@ -311,8 +301,8 @@ img {
 form {
 	display: flex;
 	padding: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px 20px;
+
 	background-color: rgba(253, 255, 254, 0.9);
 	border: 1px solid var(--darkgray);
 	border-radius: 8px;
@@ -479,8 +469,14 @@ main {
 		font-size: 4rem;
 		letter-spacing: 3px;
 	}
-
+	.hero-text {
+		margin-top: 100px;
+	}
+	.arrow-down {
+		margin-top: 50px;
+	}
 	section > h2 {
+		margin-bottom: 8px;
 		font-size: 1.5em;
 		font-weight: 700;
 	}
@@ -497,7 +493,7 @@ main {
 	}
 	form {
 		padding: 20px;
-		margin-top: 0;
+		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 
@@ -509,9 +505,6 @@ main {
 	}
 
 	/* registration/contact */
-	.contact-container {
-		top: 8px;
-	}
 }
 /*  medium / tablets screens */
 @media screen and (min-width: 767px) {
@@ -529,16 +522,17 @@ main {
 	}
 
 	.logo {
-		margin: 6px 0 6px 100px;
+		margin: 6px 0 6px 16px;
 	}
-	.hero-p {
-		margin-top: 190px;
-	}
-	.hero-p > p {
+
+	.hero-text > p {
 		font-size: 2em;
 	}
+	.hero-text {
+		margin-top: 50px;
+	}
 	.arrow-down {
-		margin-top: 10px;
+		margin-top: 45px;
 	}
 
 	.gallery-image-wrapper {
@@ -554,19 +548,24 @@ main {
 
 	.form-contact-container {
 		flex-direction: row;
-		padding: 16px;
+		justify-content: center;
+		align-items: center;
+		margin: 60px 0 60px 0;
+		padding: 0 10px;
 		box-shadow: 2px 2px 4px 2px grey;
 		border-radius: 10px;
 		gap: 16px;
 	}
-	form {
-		width: 50%;
-	}
+
 	.contact-container {
 		width: 50%;
 		bottom: 30px;
 		padding: 50px 0;
 		border-radius: 10px;
+	}
+	form {
+		width: 50%;
+		margin: 20px 0;
 	}
 	.logo-contact {
 		width: 150px;
@@ -579,7 +578,7 @@ main {
 
 /* large screens*/
 @media screen and (max-width: 920px) {
-	.blank-card-text-container > p {
+	.blank-card-text-wrapper > p {
 		font-size: 1.25em;
 		padding-bottom: 16px;
 	}
