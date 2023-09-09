@@ -55,6 +55,7 @@ header {
 	background-color: var(--darkbrown);
 }
 
+/* header logo */
 .logo {
 	width: 55px;
 	padding-top: 6px;
@@ -108,8 +109,7 @@ h1 {
 	margin: 175px auto;
 }
 
-/* hero text */
-
+/* hero text  "Join to day..."*/
 .hero-text > p {
 	font-famiy: var(--palanquin);
 	font-size: 1.5em;
@@ -119,17 +119,19 @@ h1 {
 	letter-spacing: 1.5px;
 	color: var(--white);
 }
+/* pushes hero text down to bottom of page */
 .hero-text {
-	margin-top: 140px;
+	margin-top: 240px;
 }
 .arrow-down {
-	margin-top: 20px;
+	margin-top: 50px;
 }
 .arrow-down > i {
 	font-size: 40px;
 	color: var(--white);
 }
-
+.arrow-down:focus {
+}
 /* main  */
 #main {
 	padding: 0 16px;
@@ -228,7 +230,7 @@ span {
 	display: grid;
 	gap: 12px;
 }
-
+/* Card wrapper class style component  */
 .card-wrapper {
 	height: 100%;
 	display: flex;
@@ -297,12 +299,11 @@ img {
 	flex-direction: column;
 	align-items: center;
 }
-
+/* form for registration */
 form {
 	display: flex;
 	padding: 20px;
-	margin: 20px 20px;
-
+	margin: 10px 0px;
 	background-color: rgba(253, 255, 254, 0.9);
 	border: 1px solid var(--darkgray);
 	border-radius: 8px;
@@ -359,7 +360,7 @@ button {
 	margin-top: 10px;
 	text-align: center;
 }
-/* Contact */
+/*  Orginaztion Contact info*/
 .contact-container {
 	width: 100vw;
 	display: flex;
@@ -412,6 +413,7 @@ main {
 
 /* footer */
 
+/* Social media icon links and orginazation website */
 .social-wrapper {
 	height: 100px;
 	display: flex;
@@ -445,23 +447,17 @@ main {
 	color: var(--white);
 }
 
-/* Media query:*/
-/* small screen */
-@media screen and (max-width: 300px) {
-	.contact-container {
-		position: relative;
-		top: 8px;
-	}
-}
-/* larger mobile */
+/* Media query for /
+
+/*  Mobile */
 @media screen and (min-width: 499px) {
 	.logo {
 		width: 75px;
 		padding-top: 6px;
 	}
-	. .nav-list li > a {
-		font-size: 1.25rem;
-		padding: 1rem;
+	.nav-list li > a {
+		font-size: 1.25em;
+		padding: 1em;
 	}
 
 	/* hero text */
@@ -470,10 +466,11 @@ main {
 		letter-spacing: 3px;
 	}
 	.hero-text {
-		margin-top: 100px;
+		margin-top: 190px;
+		font-size: 1.5em;
 	}
 	.arrow-down {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 	section > h2 {
 		margin-bottom: 8px;
@@ -485,14 +482,12 @@ main {
 	}
 
 	#gallery {
-		padding-top: 65px;
+		padding-top: 120px;
 		padding-bottom: 20px;
 	}
 	#register {
-		padding-top: 120px;
 	}
 	form {
-		padding: 20px;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -503,10 +498,8 @@ main {
 		grid-template-columns: auto auto;
 		gap: 12px;
 	}
-
-	/* registration/contact */
 }
-/*  medium / tablets screens */
+/*  medium screens and tablet view */
 @media screen and (min-width: 767px) {
 	.nav-list li > a {
 		font-size: 1.5rem;
@@ -525,16 +518,17 @@ main {
 		margin: 6px 0 6px 16px;
 	}
 
-	.hero-text > p {
-		font-size: 2em;
-	}
 	.hero-text {
-		margin-top: 50px;
+		margin-top: 160px;
+		font-size: 1.5em;
 	}
 	.arrow-down {
-		margin-top: 45px;
+		margin-top: 60px;
 	}
-
+	.locations > p {
+		font-size: 1.5em;
+		padding: 0 10px 50px;
+	}
 	.gallery-image-wrapper {
 		grid-template-columns: auto auto auto;
 		grid-template-rows: auto auto auto; /* Two rows with 3 columns, and one row with 2 columns */
@@ -575,9 +569,42 @@ main {
 		margin-top: 10px;
 	}
 }
+/*  large screens */
+@media screen and (min-width: 978px) {
+	.hero-text {
+		margin-top: 160px;
+		font-size: 1.5em;
+	}
+	.arrow-down {
+		margin-top: 60px;
+	}
 
-/* large screens*/
-@media screen and (max-width: 920px) {
+	#gallery {
+		padding-top: 110px;
+	}
+	.locations > p {
+		font-size: 2em;
+		padding: 0 200px 50px;
+	}
+
+	.blank-card-text-wrapper > p {
+		font-size: 1.25em;
+		padding-bottom: 16px;
+	}
+}
+
+/* x-large screens*/
+@media screen and (min-width: 1200px) {
+	#gallery {
+		padding-top: 110px;
+	}
+	.locations > p {
+		font-size: 2em;
+		padding: 0 200px 50px;
+	}
+	#register {
+		padding: 110px;
+	}
 	.blank-card-text-wrapper > p {
 		font-size: 1.25em;
 		padding-bottom: 16px;

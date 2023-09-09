@@ -50,22 +50,26 @@
 				<div class="hero-text">
 					<p>Join Today for a Cleaner Ocean Tomorrow!</p>
 				</div>
+				<!-- This <a> to indicate to scroll down and when pressed take user to about section -->
 				<div class="arrow-down">
-					<a></a>
-					<img
-						src="assets/images/icons/downward_navigation_icon.svg"
-						alt="down arrow to scroll"
-					/>
+					<a
+						href="#about"
+						aria-label="arrow down indicator that navigates to first section: about"
+						><img
+							src="assets/images/icons/downward_navigation_icon.svg"
+							alt="down arrow to scroll"
+					/></a>
 				</div>
 			</div>
+
+			<!-- Navigation header  -->
 			<div class="header-container">
 				<div>
-					<a href="about" name="arrow down icon"
-						><img
-							class="logo"
-							src="./assets/images/guard_logo.webp"
-							alt="Logo: Operation Clean Ride with a standing surf board "
-					/></a>
+					<img
+						class="logo"
+						src="./assets/images/guard_logo.webp"
+						alt="Logo: Operation Clean Ride with a standing surf board "
+					/>
 				</div>
 				<nav class="nav-wrapper">
 					<ul class="nav-list">
@@ -106,7 +110,7 @@
 			</div>
 		</header>
 
-		<!-- Main starting with the About section with nav link to section in the header nav menu -->
+		<!-- Main: starting with the about section -->
 		<main id="main" class="content">
 			<section id="about" class="main-about">
 				<h2 class="h2-tag">About Wave Guard</h2>
@@ -178,9 +182,9 @@
 				</div>
 			</section>
 
-			<!-- Second section of the main Gallery -->
+			<!-- Second section of the main Gallery displays information of location and upload user images and stories -->
 			<section id="gallery" class="gallery-main">
-				<h2>Global Connection</h2>
+				<h2>Global Connections</h2>
 				<div class="locations">
 					<p>
 						Pipeline Beach, Oahu, Hawaii
@@ -213,7 +217,7 @@
 					</div>
 
 					<div class="card-wrapper">
-						<!-- Wraps image and text in to a card component -->
+						<!-- This card wraper, wrapes image and users stores in to a card component -->
 						<div class="card-image-container">
 							<img
 								src="./assets/images/istockphoto-1435005446.webp"
@@ -333,11 +337,9 @@
 					</div>
 				</div>
 			</section>
-
-			<!-- Third section of main Registration and Contact -->
+			<!-- Third section of main Registration and Contact information-->
 			<section id="register" class="register-container">
 				<h2 class="h2-tag">Join Us</h2>
-
 				<div class="form-contact-container">
 					<form>
 						<div class="form-container">
@@ -398,14 +400,14 @@
 										Join today!
 									</button>
 								</div>
-								<!-- Displays message when join today button is pressed -->
+								<!-- Displays hidden message when join today button is pressed -->
 								<div id="message" class="hidden-message">
 									<p>Welcome to the GUARD!</p>
 								</div>
 							</div>
 						</div>
 					</form>
-					<!-- Contact section of the third main sub-section   -->
+					<!-- Contact section of the third main sub-section  contains contact information of orginzation  -->
 					<div class="contact-container">
 						<div class="contact-title-wrapper">
 							<div class="logo-contact-wrapper">
@@ -421,13 +423,11 @@
 								<p>www.operationcleanride.org</p>
 							</div>
 						</div>
-
 						<div class="contact-info-wrapper">
 							<p class="address">
 								World Wide 123
 								<span>Global Location, Erth 22234</span>
 							</p>
-
 							<p>
 								phone.<span>+46</span><span>(0)</span> 222 22 22
 								22
@@ -505,6 +505,7 @@
 				</p>
 			</div>
 		</footer>
+		<!-- This script section was added for scalable functionality when  to display hidden message "Join today" on button press.-->
 		<script>
 			document
 				.getElementById('reveal-button')
