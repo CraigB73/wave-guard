@@ -67,7 +67,6 @@
 
 <h2>Troublingshooting and testing</h2>
 
-
 <h3>Troubleshooting</h3>
 <p></p>
 <h3>Testing</h3>
@@ -80,7 +79,7 @@
 <h3>Bugs Found</h3>
 <ul><li>Display later if any found</li></ul>
 <h2>Deployment</h2>
-<p>[Using GitHub pages to deploy website](https://craigb73.github.io/wave-guard/)</p>
+<a href="https://craigb73.github.io/wave-guard/"></a>
 <ul>
 <li></li></ul>
 <h2>Credits and Acknowledgements</h2>
