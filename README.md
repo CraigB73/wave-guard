@@ -6,7 +6,7 @@
 
 <p>Craig Britton </p>
 
-<h3>[Live Site] (enter github website)</h3>  
+<h3><a href="https://craigb73.github.io/wave-guard/"></a>craigb73.github.io/wave-guard</h3>  
 <hr>
 
 <h2>Contents</h2>
@@ -47,8 +47,9 @@
 
 <h4><Strong>Wirframes:</Strong></h4>
 <p>Color Palette and Fonts</p>
-<img scr="./assets/images/readme_img/Screenshot 2023-09-06 at 13.12.22.png">
-<h4><Strong>Style</Strong></h4><p></p>
+<img scr="./assets/images/readme_img/fonts-color-palette.png">
+<h4><Strong>Initial layout </Strong></h4>
+<img src="./assets/images/readme_img/homepage-wireframe.png"> <img src="./assets/images/readme_img/about.png"> <img src="./assets/images/readme_img/gallery.png"><img src="./assets/images/readme_img/signup.png">
 
 <h2>Technologies Used</h2>
 
@@ -56,7 +57,7 @@
 <ul>
 <li>HTML5</li>
 <li>CSS3</li>
-<li>Javascript</li>
+<li>Javascript: to display hidden message</li>
 </ul>
 <h3>Libraries/programs</h3>
 <ul>
@@ -66,14 +67,14 @@
 </ul>
 
 <h2>Troublingshooting and testing</h2>
-
 <h3>Troubleshooting</h3>
-<p>Google Chrome development tool</p>
+<p>Google Chrome development tool for layout</p>
 <p>Stackoverflow use for help with script section to display hidden message</p>
 
 <h3>Testing</h3>
 <ul>
-<li>LightHouse for accessibility </li>
+<li>PageSpeed Insight: <a href="www.pagespeed.web.dev">www.pagespeed.web.dev</a></li>
+<img src="./assets/images/readme_img/analysis.png">
 <li>WC3 Validator for HTML and CSS</li>
 </ul>
 
