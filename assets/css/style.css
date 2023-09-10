@@ -121,14 +121,23 @@ h1 {
 
 .arrow-down {
 	margin-top: 50px;
+	animation: bounce 1s infinite; 
 }
 
 .arrow-down > i {
 	font-size: 40px;
 	color: var(--white);
+	
 }
-
-.arrow-down:focus {
+/* This uses the animation selector from .arrow-down 
+to bounce the down arrow to indicate to scroll down*/
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
 }
 
 /* main  */
