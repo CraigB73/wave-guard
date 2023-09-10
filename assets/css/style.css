@@ -220,13 +220,6 @@ span {
 }
 
 /* default image styling */
-.gallery-main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: 25px;
-}
-
 .gallery-image-wrapper {
 	display: grid;
 	gap: 12px;
@@ -474,16 +467,14 @@ main {
 		font-size: 4rem;
 		letter-spacing: 3px;
 	}
-
 	.hero-text {
-		margin-top: 190px;
-		font-size: 1.5em;
+		margin-top: 150px;
+		font-size: 18px;
 	}
 
 	.arrow-down {
-		margin-top: 30px;
+		margin-top: 40px;
 	}
-
 	section > h2 {
 		margin-bottom: 8px;
 		font-size: 1.5em;
@@ -536,14 +527,13 @@ main {
 	}
 
 	.hero-text {
-		margin-top: 160px;
-		font-size: 1.75em;
+		margin-top: 150px;
+		font-size: 1.25em;
 	}
 
 	.arrow-down {
-		margin-top: 60px;
+		margin-top: 50px;
 	}
-
 	.locations > p {
 		font-size: 1.5em;
 		padding: 0 10px 50px;
@@ -598,12 +588,12 @@ main {
 /*  large screens */
 @media screen and (min-width: 978px) {
 	.hero-text {
-		margin-top: 170px;
-		font-size: 2em;
+		margin-top: 150px;
+		font-size: 1.25em;
 	}
 
 	.arrow-down {
-		margin-top: 40px;
+		margin-top: 10px;
 	}
 
 	#gallery {
@@ -624,12 +614,12 @@ main {
 /* x-large screens*/
 @media screen and (min-width: 1400px) {
 	.hero-text {
-		margin-top: 190px;
-		font-size: 2em;
+		margin-top: 150px;
+		font-size: 1.25em;
 	}
 
 	.arrow-down {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	#about {
 		padding-top: 120px;
