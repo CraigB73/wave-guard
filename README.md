@@ -49,7 +49,7 @@
 <p>Color Palette and Fonts</p>
 <img scr="./assets/images/readme_img/fonts-color-palette.png">
 <h4><Strong>Initial layout </Strong></h4>
-<img src="./assets/images/readme_img/homepage-wireframe.png" width="500" height="600"> <img src="./assets/images/readme_img/about.png" width="500" height="600"> <img src="./assets/images/readme_img/gallery.png" width="500" height="600"><img src="./assets/images/readme_img/signup.png" width="500" height="600">
+<img src="./assets/images/readme_img/homepage-wireframe.png" width="500" height="300"> <img src="./assets/images/readme_img/about.png" width="500" height="300"> <img src="./assets/images/readme_img/gallery.png" width="500" height="300"><img src="./assets/images/readme_img/signup.png" width="500" height="300">
 
 <h2>Technologies Used</h2>
 
@@ -74,9 +74,9 @@
 <h3>Testing</h3>
 <ul>
 <li>PageSpeed Insight: <a href="www.pagespeed.web.dev">www.pagespeed.web.dev</a></li>
-<img src="./assets/images/readme_img/analysis.png" width="500" height="600">
+<img src="./assets/images/readme_img/analysis.png" width="500" height="300">
 <li>W3C Validator for HTML and CSS</li>
-<img src="./assets/images/readme_img/css.png" width="500" height="600"> <img src="./assets/images/readme_img/html_text.png" width="500" height="600">
+<img src="./assets/images/readme_img/css.png" width="500" height="300"> <img src="./assets/images/readme_img/html_text.png" width="500" height="300">
 </ul>
 
 <h2>Bugs</h2>
