@@ -21,7 +21,7 @@
 <li>Content and Resources</li>
 </ol>
 
-<h2>User Experience</h2>
+<h2 id="planning" >User Experience</h2>
 
 <h3>Project planning</h3>   
 <p>After reading though the options for my first portfolio project I decided to create a website based on something that I have a real instrest an passion for, Earths oceans. I believe that there can never be enough awareness of maintaining a clean and healthy ocean. </p>
@@ -36,10 +36,10 @@
 <li>How to contact the orginzation</li>
 </ul>
 
-<p><strong>Scope:</strong> Wave Guard's website will display a direct navigation focusing on three section: Home, Gallery, and Signup sections, providing seamless navigation. Each section will be accessable by using clearly displayed navigation links that will be displayed when scrolling between section. The website's home page will display an inpiratonal image and message. Information in the gallery section will provide images and clear description when provided by users to display their contribution to clean beaches and oceans. Method to signup should be easy and direct in becoming a member of the Wave Guard</p>
+<p><strong>Scope:</strong> Wave Guard's website will display a scrolling and single page navigation focusing on three section: Home, Gallery, and Registration sections, providing seamless navigation. Each section will be accessable by using clearly displayed navigation links that will be displayed when scrolling between section. The website's home page will display an inpiratonal image and message. Information in the gallery section will provide images and clear description when provided by users to display their contribution to clean beaches and oceans. Method to signup should be easy and direct in becoming a member of the Wave Guard</p>
 
 <h3>Strutural planning</h3>
-<p></P>
+<p>Use google seach for inpiration and structure planning following standard practices</p>
 
 <h4><Strong>Home:</Strong></h4><p></p>
 <h4><Strong>Gallery:</Strong></h4><p></p>
@@ -47,7 +47,7 @@
 
 <h4><Strong>Wirframes:</Strong></h4>
 <p>Color Palette and Fonts</p>
-<img scr="./assets/images/design_templets/Screenshot 2023-09-06 at 13.12.22.png">
+<img scr="./assets/images/readme_img/Screenshot 2023-09-06 at 13.12.22.png">
 <h4><Strong>Style</Strong></h4><p></p>
 
 <h2>Technologies Used</h2>
@@ -68,28 +68,32 @@
 <h2>Troublingshooting and testing</h2>
 
 <h3>Troubleshooting</h3>
-<p></p>
+<p>Google Chrome development tool</p>
+<p>Stackoverflow use for help with script section to display hidden message</p>
+
 <h3>Testing</h3>
 <ul>
 <li>LightHouse for accessibility </li>
 <li>WC3 Validator for HTML and CSS</li>
 </ul>
-<h2>Bugs</h2>
 
+<h2>Bugs</h2>
+<p><p>
 <h3>Bugs Found</h3>
-<ul><li>Display later if any found</li></ul>
+<ul>
+<li>Optimaztion with images</li>
+</ul>
+
 <h2>Deployment</h2>
 <a href="https://craigb73.github.io/wave-guard/"></a>
-<ul>
-<li></li></ul>
+
 <h2>Credits and Acknowledgements</h2>
-<h3>Credits</h3>
 <h3>Acknowledgements</h3>
 <ul>
 <l>README structure provide by Lisa Butler's GitHub README.md, Portfolio-Project1</l>
 </ul>
-<h2>Content and resources</h2>
+<h3>Content and Credits</h3>
 <ul>
 <li>This website and the created content provided by the developer as part of Code Institutes course/project requirement. </li>
-<li>Images and decription were provided by istockphoto and chatgbt for gallery content creation.</li>
+<li>Images and decription were provided by istockphoto and chatgbt for gallery mock content creation.</li>
 <ul>
