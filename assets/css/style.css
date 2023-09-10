@@ -32,6 +32,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
 body {
 	font-family: var(--roboto);
 	background-color: var(---);
@@ -60,9 +61,11 @@ header {
 	width: 55px;
 	padding-top: 6px;
 }
+
 .nav-wrapper {
 	padding-bottom: 3px;
 }
+
 .nav-list {
 	display: flex;
 	list-style: none;
@@ -71,7 +74,7 @@ header {
 .nav-list li > a {
 	font-family: var(--radley);
 	letter-spacing: 0.75px;
-	color: var(--white);
+	color: var(--blk-text);
 	text-decoration: none;
 	padding: 0 6px;
 }
@@ -98,6 +101,7 @@ header {
 	min-height: 655px;
 	min-width: 280px;
 }
+
 h1 {
 	width: 100%;
 	color: var(--white);
@@ -119,41 +123,45 @@ h1 {
 	letter-spacing: 1.5px;
 	color: var(--white);
 }
+
 /* pushes hero text down to bottom of page */
 .hero-text {
 	margin-top: 240px;
 }
+
 .arrow-down {
 	margin-top: 50px;
 }
+
 .arrow-down > i {
 	font-size: 40px;
 	color: var(--white);
 }
+
 .arrow-down:focus {
 }
+
 /* main  */
 #main {
 	padding: 0 16px;
 }
+
 #about {
 	padding-top: 100px;
 }
 
 /* section tags */
-
 section > h2 {
 	width: 75%;
 	color: var(--white);
-	font-size: 0.75em;
+	font-size: 1em;
 	font-weight: 700;
-	margin-bottom: 2em;
-	padding: 4px 0 3px 8px;
+	margin-bottom: 24px;
+	padding: 4px 0 6px 8px;
 	background-color: var(--darkgray);
 }
 
 /* about section  */
-
 .main-about > p {
 	lettter-spacing: 0.75px;
 	font-family: var(--radley);
@@ -162,9 +170,11 @@ section > h2 {
 .main-about > h3 {
 	font-family: var(--radley);
 }
+
 .main-about > h4 {
 	font-family: var(--palanquin);
 }
+
 section > h3 {
 	font-family: var(--roboto);
 	font-weight: 600;
@@ -184,6 +194,7 @@ h4 {
 	font-weight: 900;
 	letter-spacing: 1px;
 }
+
 h4 ~ p {
 	padding: 0 1em;
 	letter-spacing: 1px;
@@ -199,6 +210,7 @@ h4 ~ p {
 	padding-top: 45px;
 	padding-bottom: 20px;
 }
+
 /*  adds spacing between location */
 span {
 	padding: 0 6px;
@@ -218,7 +230,6 @@ span {
 }
 
 /* default image styling */
-
 . .gallery-main {
 	display: flex;
 	flex-direction: column;
@@ -230,6 +241,7 @@ span {
 	display: grid;
 	gap: 12px;
 }
+
 /* Card wrapper class style component  */
 .card-wrapper {
 	height: 100%;
@@ -288,6 +300,7 @@ img {
 #register {
 	padding-top: 100px;
 }
+
 .register-container {
 	width: 100%;
 	display: flex;
@@ -299,6 +312,7 @@ img {
 	flex-direction: column;
 	align-items: center;
 }
+
 /* form for registration */
 form {
 	display: flex;
@@ -360,6 +374,7 @@ button {
 	margin-top: 10px;
 	text-align: center;
 }
+
 /*  Orginaztion Contact info*/
 .contact-container {
 	width: 100vw;
@@ -427,14 +442,17 @@ main {
 	text-decoration: none;
 	color: var(--white);
 }
+
 .icon {
 	width: 38px;
 	height: 38px;
 	margin-top: 1em;
 }
+
 .icon > img {
 	padding: 0 6px;
 }
+
 .social-icons {
 	display: flex;
 	justify-content: center;
@@ -455,6 +473,7 @@ main {
 		width: 75px;
 		padding-top: 6px;
 	}
+
 	.nav-list li > a {
 		font-size: 1.25em;
 		padding: 1em;
@@ -465,18 +484,22 @@ main {
 		font-size: 4rem;
 		letter-spacing: 3px;
 	}
+
 	.hero-text {
 		margin-top: 190px;
 		font-size: 1.5em;
 	}
+
 	.arrow-down {
 		margin-top: 30px;
 	}
+
 	section > h2 {
 		margin-bottom: 8px;
 		font-size: 1.5em;
 		font-weight: 700;
 	}
+
 	#about {
 		padding-top: 126px;
 	}
@@ -485,30 +508,34 @@ main {
 		padding-top: 120px;
 		padding-bottom: 20px;
 	}
+
 	#register {
 	}
+
 	form {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 
 	/* Gallery Cards */
-
 	.gallery-image-wrapper {
 		grid-template-columns: auto auto;
 		gap: 12px;
 	}
 }
+
 /*  medium screens and tablet view */
 @media screen and (min-width: 767px) {
 	.nav-list li > a {
 		font-size: 1.5rem;
 		padding: 1rem;
 	}
+
 	h1 {
 		font-size: 5.5rem;
 		letter-spacing: 10px;
 	}
+
 	.header-container {
 		flex-direction: row;
 		justify-content: space-between;
@@ -520,24 +547,29 @@ main {
 
 	.hero-text {
 		margin-top: 160px;
-		font-size: 1.5em;
+		font-size: 1.75em;
 	}
+
 	.arrow-down {
 		margin-top: 60px;
 	}
+
 	.locations > p {
 		font-size: 1.5em;
 		padding: 0 10px 50px;
 	}
+
 	.gallery-image-wrapper {
 		grid-template-columns: auto auto auto;
 		grid-template-rows: auto auto auto; /* Two rows with 3 columns, and one row with 2 columns */
 		gap: 12px;
 		align-items: center;
 	}
+
 	.blank-card {
 		display: flex;
 	}
+
 	/* registration section */
 
 	.form-contact-container {
@@ -557,31 +589,37 @@ main {
 		padding: 50px 0;
 		border-radius: 10px;
 	}
+
 	form {
 		width: 50%;
 		margin: 20px 0;
 	}
+
 	.logo-contact {
 		width: 150px;
 		margin-bottom: 26px;
 	}
+
 	footer {
 		margin-top: 10px;
 	}
 }
+
 /*  large screens */
 @media screen and (min-width: 978px) {
 	.hero-text {
-		margin-top: 160px;
-		font-size: 1.5em;
+		margin-top: 170px;
+		font-size: 2em;
 	}
+
 	.arrow-down {
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 
 	#gallery {
 		padding-top: 110px;
 	}
+
 	.locations > p {
 		font-size: 2em;
 		padding: 0 200px 50px;
@@ -595,16 +633,31 @@ main {
 
 /* x-large screens*/
 @media screen and (min-width: 1200px) {
+	.hero-text {
+		margin-top: 190px;
+		font-size: 2em;
+	}
+
+	.arrow-down {
+		margin-top: 20px;
+	}
+	#about {
+		padding-top: 120px;
+	}
+
 	#gallery {
 		padding-top: 110px;
 	}
+
 	.locations > p {
 		font-size: 2em;
 		padding: 0 200px 50px;
 	}
+
 	#register {
-		padding: 110px;
+		padding-top: 110px;
 	}
+
 	.blank-card-text-wrapper > p {
 		font-size: 1.25em;
 		padding-bottom: 16px;
