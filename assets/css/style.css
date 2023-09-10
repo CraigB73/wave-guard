@@ -632,7 +632,7 @@ main {
 }
 
 /* x-large screens*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
 	.hero-text {
 		margin-top: 190px;
 		font-size: 2em;
