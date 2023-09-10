@@ -76,6 +76,7 @@
 <li>PageSpeed Insight: <a href="www.pagespeed.web.dev">www.pagespeed.web.dev</a></li>
 <img src="./assets/images/readme_img/analysis.png">
 <li>WC3 Validator for HTML and CSS</li>
+<img src="./assets/images/readme_img/css.png"> <img src="./assets/images/readme_img/html_text.png">
 </ul>
 
 <h2>Bugs</h2>
