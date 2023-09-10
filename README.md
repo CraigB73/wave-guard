@@ -1,5 +1,5 @@
 <h1>Wave Guard</h1> 
-
+<img src="./readme_img/device.png">
 <p>Wave Guard.com is a single page website targets surfer and anyone with a passion for the ocean.</p>
 <P>Wave Guard provides an about section that offers information regard the Wave Guard commuity</P>
 
@@ -20,33 +20,33 @@
       <li>Bottom center is an indicator down arrow that scrolls to the first section, "about".</li>
     </ul> 
   <li>Landing page hero image</li>
-  <img src="./vscode/readme_img/landing_page.png" >
+  <img src="./readme_img/landing_page.png" >
     <ul>
       <li>Full page black and white image of a group of surfer display togetherness </li>
       <li>Displays the header, <i>WAVE GUARD</i> </li>
       <li>An encouagement message to join the Guard.</li>
     </ul>
 <li>About Section</li>
-  <img src="./vscode/readme_img/aboutsection.png">
+  <img src="./readme_img/aboutsection.png">
   <ul>
     <li>The About section provides information about the Operation Clean Ride and the Wave Guard community</li>
     <li>Education and Wave Guards mission to creating a cleaner ocean</li>
     </ul>
 <li>Gallery Section</li>
-  <img src="./vscode/readme_img/gallery_section.png">
+  <img src="./readme_img/gallery_section.png">
   <ul>
     <li>Provides a sample list of location for of the guard community</li>
     <li>Images and story behide the image</li>
   </ul>
 <li>Registration/Contact Section</li>
-  <img src="./vscode/readme_img/regiration.png">
+  <img src="./readme_img/regiration.png">
   <ul>
     <li>The registration form collect infomation about the user which will be stored in a database for use by the community to connect with eachother accross oceans.</li>
   <li>It has a  section for uses to provied special needs when participating in events</li>
   <li>The contact frame of this section provides the contact information to the main office manages the growth of Wave Guard<li>
   </uL>
 <li>Footer</li>
-<img src="./vscode/readme_img/footer.png">
+<img src="./readme_img/footer.png">
   <ul>
   <li>The footer displays social media link and orginzation website</li>
   <li>Links navigate to open in a new tab.
@@ -84,10 +84,10 @@
 <h3>Validation</h3>
 <ul>
   <li>PageSpeed Insight: <a href="www.pagespeed.web.dev">www.pagespeed.web.dev</a></li>
-  <img src="./vscode/readme_img/analysis.png">
+  <img src="./readme_img/analysis.png">
   <li>W3C Validator for HTML and CSS</li>
-  <img src="./vscode/readme_img/css.png"> 
-  <img src="./vscode/readme_img/html_text.png">
+  <img src="./readme_img/css.png"> 
+  <img src="./readme_img/html_text.png">
 </ul>
 <h2>Bugs</h2>
 <ul>
