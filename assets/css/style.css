@@ -75,12 +75,7 @@ header {
 }
 
 /* hero image */
-.hero-text-wrapper {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
 
 .hero-image {
 	background: url('../images/bgimage-surfers.webp') no-repeat center
@@ -92,17 +87,32 @@ header {
 	min-width: 280px;
 }
 
+.hero-text-wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
 h1 {
 	width: 100%;
+	margin-top:250px;
 	color: var(--white);
 	font-family: 'Palanquin Dark', roboto, sans-serif;
-	font-size: 2.75rem;
+	font-size: 3em;
 	letter-spacing: 1.5px;
 	font-weight: 700;
 	text-shadow: 1px 1px 2px black;
-	margin: 175px auto;
 }
 
+.text-wrapper{
+	display: flex; 
+	flex-direction: column;
+	align-items:center;
+	
+
+}
 /* hero text  "Join to day..."*/
 .hero-text > p {
 	font-family: 'Palanquin Dark', roboto, sans-serif;
@@ -114,20 +124,16 @@ h1 {
 	color: var(--white);
 }
 
-/* pushes hero text down to bottom of page */
-.hero-text {
-	margin-top: 240px;
-}
-
+/* nav arrow for to scroll */
 .arrow-down {
+	width: 50px;
+	height: 50px;
 	margin-top: 50px;
 	animation: bounce 1s infinite; 
 }
 
 .arrow-down > i {
-	font-size: 40px;
 	color: var(--white);
-	
 }
 /* This uses the animation selector from .arrow-down 
 to bounce the down arrow to indicate to scroll down*/
@@ -476,14 +482,7 @@ main {
 		font-size: 4rem;
 		letter-spacing: 3px;
 	}
-	.hero-text {
-		margin-top: 150px;
-		font-size: 18px;
-	}
 
-	.arrow-down {
-		margin-top: 40px;
-	}
 	section > h2 {
 		margin-bottom: 8px;
 		font-size: 1.5em;
@@ -535,14 +534,10 @@ main {
 		margin: 6px 0 6px 16px;
 	}
 
-	.hero-text {
-		margin-top: 150px;
-		font-size: 1.25em;
+	h1 {
+		margin-top:200px;
 	}
 
-	.arrow-down {
-		margin-top: 50px;
-	}
 	.locations > p {
 		font-size: 1.5em;
 		padding: 0 10px 50px;
@@ -596,14 +591,6 @@ main {
 
 /*  large screens */
 @media screen and (min-width: 978px) {
-	.hero-text {
-		margin-top: 150px;
-		font-size: 1.25em;
-	}
-
-	.arrow-down {
-		margin-top: 10px;
-	}
 
 	#gallery {
 		padding-top: 110px;
@@ -621,15 +608,11 @@ main {
 }
 
 /* x-large screens*/
-@media screen and (min-width: 1700px) {
-	.hero-text {
-		margin-top: 220px;
-		font-size: 1.25em;
+@media screen and (min-width: 1499px) {
+	.hero-text > p {
+		font-size: 2.5em;	
 	}
 
-	.arrow-down {
-		margin-top: 10px;
-	}
 	#about {
 		padding-top: 120px;
 	}

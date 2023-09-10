@@ -48,7 +48,7 @@
 
 
 <li>Registration/Contact Section</li>
-  <img src="./readme_img/regiration.png">
+  <img src="./readme_img/registration.png">
   <ul>
     <li>The registration form collect infomation about the user which will be stored in a database for use by the community to connect with eachother accross oceans.</li>
   <li>It has a  section for uses to provied special needs when participating in events</li>
